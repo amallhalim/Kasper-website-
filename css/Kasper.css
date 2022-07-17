@@ -239,14 +239,7 @@ header nav .form i {
   background-size: cover;
   overflow: hidden;
 }
-.Design .backgroud { 
-  /* display: flex; */
 
-}
-.Design .imageq  {
-/* padding: 40px; */
-background-color: rgb(0, 255, 4);
-} 
 .Design .imageq  img {
 position: absolute;
 padding: 40px;
@@ -255,7 +248,14 @@ margin-bottom: -2px;
     top: 215px;
     left: 116px;
     z-index: 5;
+    /* position: relative; */
+    bottom: -150px;
 } 
+@media (max-width: 767px){
+.Design .imageq  img {
+    display: none;
+}
+}
 .Design .overlay {
   position: absolute;
   left: 0;
@@ -266,15 +266,28 @@ margin-bottom: -2px;
 }
 .Design .text {
   position: absolute;
-  background-color: var(--main-color);
   background-color: var(--transparent-color);
   width: 50%;
   height: 75%;
   top: 15%;
   right: 0;
+      /* right: -525px; */
   padding: 50px;
   color: white;
+    /* position: relative; */
+    z-index: 2;
+    flex: 1;
+
  }  
+@media (max-width: 767px){
+.Design .text {
+  width: 80%;
+  right: 0px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+}
  .Design  h3  {
 /* margin-bottom: 30px;
 padding-left: 30px; */
@@ -293,6 +306,14 @@ padding-left: 30px; */
  .Design .text p{
   margin-left: 25px;
  }
+ 
+
+
+.design .image, .design .text {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+}
 /* <!-- End Design --> */
 /* <!-- Start Portfolio -->  */
 .Portfolio{
@@ -416,7 +437,9 @@ width: 100%;
 /* <!-- Start About --> */
  .About {
   padding-top: var(--section-padding);
- /* padding-bottom: var(--section-padding);  */
+ padding-bottom: var(--section-padding); 
+     padding-bottom: 42px;
+
   overflow: hidden;
   text-align: center;
    position: relative; 
@@ -429,15 +452,17 @@ max-width: 100%;
 }
 @media(max-width:787px){
   .About img {
-   position: relative;
+   /* position: relative; */
 margin-bottom: -60px;   
 bottom: -60px;
+
 }
 }
 /* <!-- End About --> */
 /* <!-- Start Stats ---------------------------------------------------------------------> */
 .Stats{
  padding-top: 100px;
+
   padding-bottom: var(--section-padding);
 background-image: url(../images/stats.png);
 background-size: cover;
@@ -589,9 +614,9 @@ margin-bottom: 15px;
   /* justify-content: flex-end;
   margin-bottom: -50px;
   margin-top: 50px; */
-      justify-content: center;
-    margin-top: 50px;
-    margin-bottom: -24px;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: -24px;
 }
 
 .mySkills .bullet li {
@@ -599,8 +624,7 @@ margin-bottom: 15px;
   height: 20px;
   border: 1px solid #aaa;
   border-radius: 50%;  */
-
-      width: 14px;
+    width: 14px;
     height: 14px;
     border: 1px solid #aaa;
     border-radius: 50%;
@@ -612,15 +636,15 @@ margin-bottom: 15px;
 }
 
 .mySkills .SKILLS .prog-holder {
-    margin-bottom: 40px;
-    font-weight: normal;
+  margin-bottom: 40px;
+  font-weight: normal;
 }
 
 
 .mySkills .SKILLS .prog-holder h4 {
   margin-bottom: 15px;
-      font-weight: normal;
-      text-transform: uppercase;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 .mySkills .SKILLS .prog-holder .prog {
         position: relative;
@@ -632,7 +656,7 @@ margin-bottom: 15px;
   position: relative;
   width: 100%;
   display: block ;
-   z-index: 5;
+  z-index: 5;
   height: 30px;
 }
 .mySkills .SKILLS .prog-holder span::after {
@@ -641,11 +665,11 @@ position: absolute;
 background-color: black;
 color: white  ;
 top: -40px; 
- right: 15px; 
-   width: 40px;
-    text-align: center;
-    border-radius: 4px;
-   
+right: 15px; 
+width: 40px;
+text-align: center;
+border-radius: 4px;
+
 }
  .mySkills .SKILLS .prog-holder  .prog span::before {
  position: absolute; 
@@ -657,7 +681,6 @@ top: -40px;
 border-color: transparent;  
 border-top-color: black ;
  } 
-
 /* <!-- End Skills --> */
 /* <!-- Start Quote --> */
 .quote{
@@ -776,7 +799,7 @@ text-align: center;
 margin: 50px auto 20px;
 font-size: 20px;
 }
-.Pricing .contact_link{
+.Pricing .contact_link {
 display: block;
 text-align: center;
 width: fit-content;
