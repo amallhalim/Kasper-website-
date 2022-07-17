@@ -586,22 +586,34 @@ margin-bottom: 15px;
   bottom: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  /* justify-content: flex-end;
   margin-bottom: -50px;
-  margin-top: 50px;
+  margin-top: 50px; */
+      justify-content: center;
+    margin-top: 50px;
+    margin-bottom: -24px;
 }
 
 .mySkills .bullet li {
-  width: 20px;
+  /* width: 20px;
   height: 20px;
   border: 1px solid #aaa;
-  border-radius: 50%; 
+  border-radius: 50%;  */
+
+      width: 14px;
+    height: 14px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 .mySkills ul li.active {
   background-color: var(--main-color);
   border-color: var(--main-color);
 }
 
+.mySkills .SKILLS  {
+    margin-top: 40px;
+}
 .mySkills .SKILLS .prog-holder {
     margin-bottom: 40px;
     font-weight: normal;
@@ -696,10 +708,13 @@ display: block ;
 
 .Pricing .plans .plan  {
   background-color: #fcfcfc;
+      text-align: center;
+
 
 } 
 .Pricing .plans .plan .head  {
 padding: 40px 20px;
+
   border-top: 5px solid var(--main-color);
   border-bottom: 5px solid var(--main-color);
 }
@@ -772,6 +787,7 @@ margin: 20px auto;
 background-color: var(--main-color);
 padding: 15px 30px;
 text-decoration: none;
+color: white;
 } 
 /* <!-- End Pricing --> */
 /* <!-- Start Subscribe --> */
